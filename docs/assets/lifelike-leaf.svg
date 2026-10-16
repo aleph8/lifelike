@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+<title id="title">Lifelike: a twenty-cell leaf-shaped HighLife seed</title>
+<circle cx="512" cy="512" r="477" fill="#020503" stroke="#8ce8ae" stroke-width="5"/>
+<g fill="#8ce8ae">
+<rect x="663" y="231" width="58" height="58"/>
+<rect x="735" y="231" width="58" height="58"/>
+<rect x="519" y="303" width="58" height="58"/>
+<rect x="591" y="303" width="58" height="58"/>
+<rect x="735" y="303" width="58" height="58"/>
+<rect x="447" y="375" width="58" height="58"/>
+<rect x="663" y="375" width="58" height="58"/>
+<rect x="735" y="375" width="58" height="58"/>
+<rect x="375" y="447" width="58" height="58"/>
+<rect x="519" y="447" width="58" height="58"/>
+<rect x="663" y="447" width="58" height="58"/>
+<rect x="375" y="519" width="58" height="58"/>
+<rect x="447" y="519" width="58" height="58"/>
+<rect x="591" y="519" width="58" height="58"/>
+<rect x="303" y="591" width="58" height="58"/>
+<rect x="447" y="591" width="58" height="58"/>
+<rect x="519" y="591" width="58" height="58"/>
+<rect x="303" y="663" width="58" height="58"/>
+<rect x="375" y="663" width="58" height="58"/>
+<rect x="231" y="735" width="58" height="58"/>
+</g>
+</svg>

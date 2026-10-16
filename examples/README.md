@@ -2,9 +2,10 @@
 
 HTML and JavaScript with no dependencies or bundler. Click to edit cells,
 start or pause the simulation, advance one generation, and clear the board.
-The example starts with a glider. Select Glider, Replicator, Blinker, Toad, or
-R-pentomino from the pattern menu. Each selection loads the matching rule and
-centers the pattern. Reset restores the initial pattern; Clear empties the board.
+The example starts with a glider. Select Glider, Replicator, Blinker, Toad,
+R-pentomino, or Lifelike Leaf from the pattern menu. Each selection loads the matching rule and
+centers the pattern. Lifelike Leaf uses the same 20-cell HighLife seed as the
+README emblem. Reset restores the initial pattern; Clear empties the board.
 Generation and population counters update as the simulation runs.
 
 The HighLife replicator is documented on [LifeWiki](https://conwaylife.com/wiki/OCA:HighLife).

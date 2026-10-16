@@ -27,6 +27,11 @@ const patterns = [
     description: "Five cells that unfold into a long, complex evolution. Try letting it run.",
     rows: [".OO", "OO.", ".O."],
   },
+  {
+    name: "Lifelike Leaf", rule: LifeRule.HighLife, rulestring: "HighLife · B36/S23",
+    description: "The 20-cell leaf behind the Lifelike emblem. Watch it unfold in HighLife.",
+    rows: ["......OO", "....OO.O", "...O..OO", "..O.O.O.", "..OO.O..", ".O.OO...", ".OO.....", "O......."],
+  },
 ];
 
 const select = document.querySelector("#pattern");

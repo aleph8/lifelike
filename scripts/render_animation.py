@@ -13,7 +13,7 @@ from PIL import Image, ImageDraw, ImageFont
 def main():
     data = json.load(sys.stdin)
     width, height = data["width"], data["height"]
-    scale, header = 10, 64
+    scale, header = data.get("scale", 10), 64
     palette = [2, 5, 3, 140, 232, 174, 125, 153, 135] + [0] * (768 - 9)
     font = ImageFont.load_default(size=16)
     frames = []

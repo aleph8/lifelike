@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/assets/lifelike-leaf.png" alt="Lifelike: a twenty-cell leaf-shaped HighLife seed" width="220">
+</p>
+
 # Lifelike
 
 A small Rust engine for Conway's Game of Life and other Life-like cellular
@@ -7,6 +11,9 @@ HTML, CSS, and JavaScript.
 Start with a handful of living cells, advance the simulation, and watch patterns
 move, oscillate, or replicate. The same Rust engine powers both native use and
 the web demo.
+
+The leaf emblem is a 20-cell HighLife seed tested with this engine.
+[Watch its first 160 generations](docs/assets/leaf.gif).
 
 ![HighLife replicator evolving through 84 generations using the Rust engine](docs/assets/replicator.gif)
 
@@ -27,11 +34,13 @@ boundaries are treated as dead, with no wrapping. Cells are packed into bytes
 
 ## Pattern gallery
 
-Five classic patterns from [ConwayLife's LifeWiki](https://conwaylife.com/wiki/).
-These GIFs are generated locally with this project's Rust engine from the
-[source patterns](docs/patterns/), using the same green and black palette as the
-viewer. All five run under Conway's rule, B3/S23. Spaceships and the gun pause
-before restarting; the oscillators loop continuously.
+Five classic patterns from [ConwayLife's LifeWiki](https://conwaylife.com/wiki/),
+followed by the leaf-shaped seed used in this project's emblem. All GIFs are
+generated locally with this project's Rust engine, using the same green and
+black palette as the viewer. The five classics use Conway's rule, B3/S23; the
+leaf uses HighLife, B36/S23. The classic [source patterns](docs/patterns/) and
+the [leaf example](core/examples/leaf.rs) are included. Spaceships, the gun, and
+the leaf pause before restarting; the oscillators loop continuously.
 
 | Pattern | Animation |
 | --- | --- |
@@ -40,6 +49,7 @@ before restarting; the oscillators loop continuously.
 | **[Pentadecathlon](https://conwaylife.com/wiki/Pentadecathlon)** — a pulsating oscillator with a 15-generation cycle. | <img src="docs/assets/pentadecathlon.gif" alt="A pentadecathlon completing its cycle" width="320"> |
 | **[Lightweight spaceship](https://conwaylife.com/wiki/Lightweight_spaceship)** — an orthogonal spaceship moving two cells every four generations. | <img src="docs/assets/lwss.gif" alt="A lightweight spaceship travelling horizontally" width="320"> |
 | **[Gosper glider gun](https://conwaylife.com/wiki/Gosper_glider_gun)** — a stationary gun that emits a new glider every 30 generations. | <img src="docs/assets/gosper-glider-gun.gif" alt="Gosper's gun producing a stream of gliders" width="320"> |
+| **[Leaf](core/examples/leaf.rs)** — the emblem's 20-cell HighLife seed, evolving through 160 generations and reaching a peak of 82 living cells. | <img src="docs/assets/leaf.gif" alt="The leaf-shaped HighLife seed evolving through 160 generations" width="320"> |
 
 ## Download a prebuilt WASM package
 
