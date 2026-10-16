@@ -41,6 +41,13 @@ before restarting; the oscillators loop continuously.
 | **[Lightweight spaceship](https://conwaylife.com/wiki/Lightweight_spaceship)** — an orthogonal spaceship moving two cells every four generations. | <img src="docs/assets/lwss.gif" alt="A lightweight spaceship travelling horizontally" width="320"> |
 | **[Gosper glider gun](https://conwaylife.com/wiki/Gosper_glider_gun)** — a stationary gun that emits a new glider every 30 generations. | <img src="docs/assets/gosper-glider-gun.gif" alt="Gosper's gun producing a stream of gliders" width="320"> |
 
+## Download a prebuilt WASM package
+
+Download the browser module from [GitHub Releases](https://github.com/aleph8/lifelike/releases/latest).
+The ZIP contains the generated JavaScript, WASM binary, TypeScript declarations,
+package metadata, and license. Extract the files together and serve them over HTTP.
+No Rust toolchain is needed to use the prebuilt package.
+
 ## Run the browser demo
 
 You need a Rust toolchain supporting edition 2024,
