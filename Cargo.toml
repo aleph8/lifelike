@@ -1,0 +1,9 @@
+[workspace]
+resolver = "3"
+members = [
+    "core",
+    "wasm"
+]
+
+[profile.release]
+opt-level = "s"

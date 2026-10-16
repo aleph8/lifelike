@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game of Life</title>
+  <link rel="stylesheet" href="./viewer.css">
+  <style>
+    body { margin: 0; min-height: 100svh; display: grid; place-items: center; background: #000; color: #e8eee9; font-family: system-ui, sans-serif; }
+    main { width: min(100% - 40px, 880px); padding: 56px 0; }
+    .eyebrow { color: #8ce8ae; font: 11px ui-monospace, monospace; letter-spacing: .2em; text-transform: uppercase; }
+    h1 { margin: 12px 0; font-size: clamp(36px, 7vw, 64px); font-weight: 500; letter-spacing: -.055em; }
+    .intro { margin: 0 0 32px; color: #8e9b92; line-height: 1.6; }
+    .pattern-bar { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 12px; }
+    .pattern-bar label { color: #a2aea6; font-size: 13px; }
+    select { color-scheme: dark; padding: 10px 36px 10px 12px; border: 1px solid #2b3930; border-radius: 8px; background: #101612; color: #e8eee9; font: inherit; font-size: 13px; cursor: pointer; }
+    select:focus-visible { outline: 2px solid #8ce8ae; outline-offset: 3px; }
+    #rule { margin-left: auto; color: #8ce8ae; font: 12px ui-monospace, monospace; }
+    #description { min-height: 1.5em; color: #8e9b92; font-size: 13px; line-height: 1.5; }
+    footer { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-top: 16px; color: #65756b; font-size: 12px; }
+    #error { color: #ffb4a6; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <span class="eyebrow">A little world of simple rules</span>
+      <h1>Game of Life</h1>
+      <p class="intro">Choose a pattern. Press start. See what emerges.</p>
+    </header>
+    <div class="pattern-bar">
+      <label for="pattern">Starting pattern</label>
+      <select id="pattern" disabled></select>
+      <span id="rule"></span>
+    </div>
+    <p id="description"></p>
+    <div id="life"></div>
+    <footer><span>Click any cell to bring it to life or turn it off.</span><span>Finite board · no wrapping</span></footer>
+    <p id="error" role="alert"></p>
+  </main>
+  <script type="module" src="./demo.js"></script>
+</body>
+</html>

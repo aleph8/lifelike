@@ -1,0 +1,4 @@
+#N Pentadecathlon
+#C Source: https://conwaylife.com/wiki/Pentadecathlon
+x = 10, y = 3, rule = B3/S23
+2bo4bo$2ob4ob2o$2bo4bo!

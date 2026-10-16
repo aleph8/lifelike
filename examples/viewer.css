@@ -1,0 +1,44 @@
+.life-viewer {
+  color-scheme: dark;
+  overflow: hidden;
+  border: 1px solid #243329;
+  border-radius: 14px;
+  background: #080d0a;
+  color: #e8eee9;
+  font: 13px system-ui, sans-serif;
+  box-shadow: 0 12px 70px #64db8c08;
+}
+.life-viewer .life-status {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #1c2921;
+  color: #90a598;
+  font: 11px ui-monospace, monospace;
+  letter-spacing: .035em;
+}
+.life-viewer canvas { display: block; width: 100%; height: auto; cursor: crosshair; }
+.life-viewer .life-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px;
+  border-top: 1px solid #1c2921;
+}
+.life-viewer button {
+  padding: 9px 18px;
+  border: 1px solid #2b3930;
+  border-radius: 7px;
+  background: #111b15;
+  color: #c6d5cb;
+  font: inherit;
+  cursor: pointer;
+  transition: background .15s, border-color .15s;
+}
+.life-viewer button:hover { background: #1c2b21; border-color: #597764; }
+.life-viewer button:focus-visible { outline: 2px solid #8ce8ae; outline-offset: 3px; }
+.life-viewer .life-play { min-width: 98px; background: #8ce8ae; color: #08170e; border-color: #8ce8ae; font-weight: 600; }
+.life-viewer .life-play:hover { background: #aff4c7; border-color: #aff4c7; }
+.life-viewer .life-clear { margin-left: auto; }
